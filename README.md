@@ -1,97 +1,147 @@
-# Task Manager Fullstack Application
+# 📝 Task Manager Fullstack Application
 
-A **Full Stack Task Manager** built using **Spring Boot** (Backend) and **React.js** (Frontend).
-
----
-
-## 🚀 Features
-
-* Create Tasks
-* Edit Tasks
-* Delete Tasks
-* Task Status (Pending / Completed)
-* REST API with Spring Boot
-* Swagger API Documentation
-* React Frontend UI
-* Full CRUD Operations
+A **Full Stack Task Manager Application** built using **Spring Boot** for the backend and **React.js** for the frontend.
+The application allows users to **create, update, delete, and manage tasks** with a clean UI and RESTful API integration.
 
 ---
 
-## 🛠 Tech Stack
+# 🚀 Features
 
-**Frontend**
+* Create new tasks
+* Update existing tasks
+* Delete tasks
+* View all tasks
+* Task status management (Pending / Completed)
+* RESTful API with Spring Boot
+* Swagger API documentation
+* Responsive React UI
+* Full CRUD operations
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
 
 * React.js
 * Axios
 * CSS
 
-**Backend**
+## Backend
 
 * Spring Boot
 * Spring Data JPA
 * H2 Database
 * Maven
+* Swagger (OpenAPI)
 
 ---
 
-## 📸 Application Screenshots
+# 📂 Project Structure
 
-### Task Manager UI
-
-![UI](screenshots/task-ui.png)
-
----
-
-### Add Task Example
-
-![Add Task](screenshots/task-added.png)
-
----
-
-### Edit & Delete Task
-
-![Actions](screenshots/task-actions.png)
-
----
-
-### Swagger API Documentation
-
-![Swagger](screenshots/swagger-api.png)
+```
+task-manager-fullstack
+│
+├── backend
+│   └── Spring Boot Application
+│
+├── frontend
+│   └── React Application
+│
+├── backend-running.png
+├── swagger-api.png
+├── task-actions.png
+├── task-added.png
+├── task-manager-ui.png
+│
+└── README.md
+```
 
 ---
 
-### Backend Running in Eclipse
+# 📸 Application Screenshots
 
-![Backend](screenshots/backend-running.png)
+## Task Manager UI
+
+![UI](task-manager-ui.png)
 
 ---
 
-## ▶ Run the Project
+## Add Task Example
 
-### Backend
+![Add Task](task-added.png)
+
+---
+
+## Edit & Delete Task
+
+![Actions](task-actions.png)
+
+---
+
+## Swagger API Documentation
+
+![Swagger](swagger-api.png)
+
+---
+
+## Backend Running in Eclipse
+
+![Backend](backend-running.png)
+
+---
+
+# ▶ Running the Project
+
+## 1️⃣ Run Backend (Spring Boot)
+
+Navigate to backend folder:
 
 ```
 cd backend
+```
+
+Run the application:
+
+```
 mvn spring-boot:run
 ```
 
-Runs on:
+Backend runs on:
 
 ```
 http://localhost:8081
 ```
 
+Swagger API:
+
+```
+http://localhost:8081/swagger-ui/index.html
+```
+
 ---
 
-### Frontend
+## 2️⃣ Run Frontend (React)
+
+Navigate to frontend folder:
 
 ```
 cd frontend
+```
+
+Install dependencies:
+
+```
 npm install
+```
+
+Start the application:
+
+```
 npm start
 ```
 
-Runs on:
+Frontend runs on:
 
 ```
 http://localhost:3000
@@ -99,20 +149,42 @@ http://localhost:3000
 
 ---
 
-## 📌 API Endpoints
+# 📌 REST API Endpoints
 
-| Method | Endpoint        |
-| ------ | --------------- |
-| GET    | /api/tasks      |
-| POST   | /api/tasks      |
-| PUT    | /api/tasks/{id} |
-| DELETE | /api/tasks/{id} |
+| Method | Endpoint          | Description       |
+| ------ | ----------------- | ----------------- |
+| GET    | `/api/tasks`      | Fetch all tasks   |
+| POST   | `/api/tasks`      | Create a new task |
+| PUT    | `/api/tasks/{id}` | Update a task     |
+| DELETE | `/api/tasks/{id}` | Delete a task     |
 
 ---
 
-## 👩‍💻 Author
+# 🗄 Database
+
+The application uses **H2 in-memory database** for simplicity.
+
+H2 Console:
+
+```
+http://localhost:8081/h2-console
+```
+
+---
+
+# 👩‍💻 Author
 
 **Shilpa Malladi**
 
 GitHub:
 https://github.com/ShilpaAM2231
+
+---
+
+# ⭐ Future Improvements
+
+* User authentication (JWT)
+* Task priority
+* Task due dates
+* Deploy application to cloud (AWS / Render)
+* Pagination & filtering
