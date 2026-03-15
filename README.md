@@ -1,42 +1,72 @@
 # Task Manager Fullstack Application
 
-A full-stack Task Manager application built using **Spring Boot** for the backend and **React.js** for the frontend.
+A **Full Stack Task Manager** built using **Spring Boot** (Backend) and **React.js** (Frontend).
+
+---
 
 ## 🚀 Features
 
-* Create tasks
-* Update tasks
-* Delete tasks
-* View all tasks
-* Task status management (Pending / Completed)
+* Create Tasks
+* Edit Tasks
+* Delete Tasks
+* Task Status (Pending / Completed)
+* REST API with Spring Boot
+* Swagger API Documentation
+* React Frontend UI
+* Full CRUD Operations
+
+---
 
 ## 🛠 Tech Stack
 
-### Backend
-
-* Java
-* Spring Boot
-* Spring Data JPA
-* REST APIs
-* H2 / MySQL
-
-### Frontend
+**Frontend**
 
 * React.js
 * Axios
-* HTML
 * CSS
 
-## 📡 API Endpoints
+**Backend**
 
-| Method | Endpoint          | Description     |
-| ------ | ----------------- | --------------- |
-| GET    | `/api/tasks`      | Get all tasks   |
-| POST   | `/api/tasks`      | Create new task |
-| PUT    | `/api/tasks/{id}` | Update task     |
-| DELETE | `/api/tasks/{id}` | Delete task     |
+* Spring Boot
+* Spring Data JPA
+* H2 Database
+* Maven
 
-## ⚙️ How to Run the Project
+---
+
+## 📸 Application Screenshots
+
+### Task Manager UI
+
+![UI](screenshots/task-ui.png)
+
+---
+
+### Add Task Example
+
+![Add Task](screenshots/task-added.png)
+
+---
+
+### Edit & Delete Task
+
+![Actions](screenshots/task-actions.png)
+
+---
+
+### Swagger API Documentation
+
+![Swagger](screenshots/swagger-api.png)
+
+---
+
+### Backend Running in Eclipse
+
+![Backend](screenshots/backend-running.png)
+
+---
+
+## ▶ Run the Project
 
 ### Backend
 
@@ -50,6 +80,8 @@ Runs on:
 ```
 http://localhost:8081
 ```
+
+---
 
 ### Frontend
 
@@ -65,10 +97,22 @@ Runs on:
 http://localhost:3000
 ```
 
-## 📸 Screenshots
+---
 
-Task Manager UI built using React with REST API integration.
+## 📌 API Endpoints
+
+| Method | Endpoint        |
+| ------ | --------------- |
+| GET    | /api/tasks      |
+| POST   | /api/tasks      |
+| PUT    | /api/tasks/{id} |
+| DELETE | /api/tasks/{id} |
+
+---
 
 ## 👩‍💻 Author
 
 **Shilpa Malladi**
+
+GitHub:
+https://github.com/ShilpaAM2231
